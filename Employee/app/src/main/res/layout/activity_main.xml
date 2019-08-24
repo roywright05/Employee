@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#241663"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name" />
+
+    <EditText
+        android:id="@+id/etLName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/etFName"
+        android:hint="Last Name" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etLName"
+        android:inputType="textPersonName"
+        android:hint="Address" />
+
+    <EditText
+        android:id="@+id/etCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etAddress"
+        android:inputType="textPersonName"
+        android:hint="City" />
+
+    <EditText
+        android:id="@+id/etState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etCity"
+        android:inputType="textPersonName"
+        android:hint="State" />
+
+    <EditText
+        android:id="@+id/etZip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etState"
+        android:inputType="textPersonName"
+        android:hint="Zip" />
+
+    <EditText
+        android:id="@+id/etPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etZip"
+        android:inputType="textPersonName"
+        android:hint="Position" />
+
+    <EditText
+        android:id="@+id/etDepartment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etPosition"
+        android:inputType="textPersonName"
+        android:hint="Department" />
+
+    <EditText
+        android:id="@+id/etTaxId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/etDepartment"
+        android:inputType="textPersonName"
+        android:hint="Tax Id" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etTaxId"
+        android:layout_alignParentRight="true"
+        android:text="@string/sendData" />
+
+</RelativeLayout>
